@@ -7,7 +7,7 @@
 
 void _BLEFlashWriteVar(uint32_t pageAddr, int size, void *data)
 {
-	Serial.println("Writing to flash...");
+	//Serial.println("Writing to flash...");
 	static FlashIAPBlockDevice bd(pageAddr, size);
 
 	bd.init();
@@ -18,7 +18,7 @@ void _BLEFlashWriteVar(uint32_t pageAddr, int size, void *data)
 
 void _BLEFlashReadVar(uint32_t pageAddr, int size, void *data)
 {
-	Serial.println("Reading from flash...");
+	//Serial.println("Reading from flash...");
 	static FlashIAPBlockDevice bd(pageAddr, size);
 
 	bd.init();
